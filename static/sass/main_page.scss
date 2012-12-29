@@ -1,0 +1,67 @@
+@import 'base';
+@import 'variables';
+
+// TODO: Look through bootstrap and use some scalfolding, maybe fluid resizing
+body {
+  background: white url(/static/img/bg_tile.gif);
+
+  // TODO: Check out some different fonts
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica,Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444;
+
+  .page-container {
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
+    width: 60%;
+    min-width: 640px;
+
+    background-color: white;
+    opacity: 0.88;
+    border-radius: 9px;
+
+    .header {
+
+      h1.name {
+        // TODO: Move this up to header, but figure out padding bug first
+        padding-left: 42px;
+        padding-top: 11px;
+      }
+    }
+
+    .content-container {
+      text-align: center;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.navbar {
+
+  ul {
+    @extend .clearfix;
+
+    margin: 0px;
+
+    li {
+      float: left;
+      display: inline;
+
+      text-align: center;
+
+      cursor: pointer;
+
+      a {
+        padding-left: 58px;
+        padding-right: 58px;
+      }
+
+      &:hover {
+        outline: red solid 1px;
+      }
+    }
+  }
+}

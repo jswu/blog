@@ -1,0 +1,22 @@
+@import 'ext/bootstrap-2.1.1/variables';
+
+////////////////////////////////////////////////////////////////////////////////
+// Bootstrap overrides
+
+// TODO: Customize stuff
+$sansFontFamily:        "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+
+$baseFontSize:          16px;
+$baseFontFamily:        $sansFontFamily;
+$baseLineHeight:        18px;
+$altFontFamily:         $serifFontFamily;
+
+$headingsFontFamily:    inherit; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:    bold;    // instead of browser default, bold
+$headingsColor:         inherit; // empty to use BS default, $textColor
+$textColor:             #444;
+$grayDark:              #555;
+$grayDarker:              #444;
+
+$fontAwesomePath: "/static/font/fontawesome-webfont";

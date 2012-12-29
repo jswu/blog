@@ -1,0 +1,28 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import 'variables';
+@import 'compass/css3';
+@import 'compass/utilities/general/clearfix';
+
+
+/*****************************
+ * Generic classes
+ **************************/
+
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+  zoom: 1;
+}
