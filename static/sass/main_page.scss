@@ -32,10 +32,20 @@ body {
       }
     }
 
-    .home {
+    .content {
       text-align: justify;
       padding: 0px 40px;
 
+      // Body header
+      h2 {
+        padding: 22px 0px 22px;
+        margin: 0px;
+
+        font-size: 40px;
+        line-height: 1.4em;
+      }
+
+      // Body text
       p {
         padding: 0px 0px 28px;
         margin: 0px;
