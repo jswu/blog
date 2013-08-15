@@ -16,7 +16,7 @@ echo "Starting compass watch"
 compass watch conf &
 
 echo "Starting Jekyll server"
-jekyll --server --auto
+jekyll serve -w
 
 # Only exit on terminate or interrupt signal
 while true; do
