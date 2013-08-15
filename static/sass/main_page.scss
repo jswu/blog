@@ -4,6 +4,7 @@
 // TODO: Look through bootstrap and use some scalfolding, maybe fluid resizing
 body {
   background: white url(/static/img/bg_tile.gif);
+  padding: 12px 0px 24px;
 
   // TODO: Check out some different fonts
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica,Arial, sans-serif;
@@ -11,9 +12,8 @@ body {
   line-height: 1.4em;
   color: #444;
 
-  .page-container {
-    margin-left: auto;
-    margin-right: auto;
+  .container {
+    margin: 0px auto 12px;
 
     height: 100%;
     width: 60%;
@@ -37,7 +37,7 @@ body {
       padding: 0px 40px;
 
       p {
-        padding: 14px 0px;
+        padding: 0px 0px 28px;
         margin: 0px;
       }
     }
@@ -60,8 +60,7 @@ body {
       cursor: pointer;
 
       a {
-        padding-left: 58px;
-        padding-right: 58px;
+        padding: 0px 22px;
       }
 
       &:hover {
