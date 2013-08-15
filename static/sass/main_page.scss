@@ -23,15 +23,6 @@ body {
     opacity: 0.88;
     border-radius: 9px;
 
-    .header {
-
-      h1.name {
-        // TODO: Move this up to header, but figure out padding bug first
-        padding-left: 42px;
-        padding-top: 11px;
-      }
-    }
-
     .content {
       text-align: justify;
       padding: 0px 40px;
@@ -56,21 +47,25 @@ body {
 
 .navbar {
 
-  ul {
+  ul.nav-items {
     @extend .clearfix;
+
+    padding: 20px 0px 0px;
 
     margin: 0px;
 
-    li {
+    li.nav-item {
       float: left;
-      display: inline;
+      display: inline-block;
+      padding: 0px 30px;
 
       text-align: center;
+      vertical-align: middle;
 
       cursor: pointer;
 
-      a {
-        padding: 0px 22px;
+      .name {
+        font-size: 45px;
       }
 
       // For debugging
