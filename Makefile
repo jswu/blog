@@ -1,13 +1,15 @@
 SHELL=/bin/bash
 
-.PHONY: local setup clean
+.PHONY: default local setup-first-time clean
+
+default: local
 
 # Hmm having everything in conf/ creates confusion, revert to before
 local:
-	./conf/local_server.sh
+	./conf/start_server.sh
 
-setup:
-	./conf/setup.sh
+setup-first-time:
+	./conf/first_time_setup.sh
 
 clean:
 	find . -name '*.pyc' -delete
