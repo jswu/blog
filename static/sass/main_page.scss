@@ -63,9 +63,10 @@ body {
         padding: 0px 22px;
       }
 
-      &:hover {
-        outline: red solid 1px;
-      }
+      // For debugging
+      //&:hover {
+      //  outline: red solid 1px;
+      //}
     }
   }
 }
