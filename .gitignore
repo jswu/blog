@@ -1,0 +1,4 @@
+_site
+conf/.sass-cache
+conf/Gemfile.lock
+static/css
