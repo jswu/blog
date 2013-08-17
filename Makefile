@@ -11,6 +11,9 @@ local:
 setup-first-time:
 	./conf/first_time_setup.sh
 
+build:
+	./build_html.sh
+
 clean:
 	find . -name '*.pyc' -delete
 	rm -rf static/css
