@@ -13,6 +13,7 @@ body {
   color: #444;
 
   .container {
+    padding: 22px 0px 0px;
     margin: 0px auto 12px;
 
     height: 100%;
@@ -29,7 +30,7 @@ body {
 
       // Body header
       h2 {
-        padding: 22px 0px 22px;
+        padding: 0px 0px 6px;
         margin: 0px;
 
         font-size: 40px;
@@ -50,8 +51,7 @@ body {
   ul.nav-items {
     @extend .clearfix;
 
-    padding: 20px 0px 0px;
-
+    padding: 0px;
     margin: 0px;
 
     li.nav-item {
