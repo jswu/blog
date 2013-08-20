@@ -55,25 +55,22 @@ body {
     margin: 0px;
 
     li.nav-item {
-      float: left;
       display: inline-block;
-      // With Posts
-      //padding: 0px 30px;
-      padding: 0px 41px;
+      width: 19%;
 
       text-align: center;
       vertical-align: middle;
 
-      cursor: pointer;
-
-      .name {
-        font-size: 45px;
-      }
+      padding: 0px;
+      margin: 0px;
 
       // For debugging
       //&:hover {
       //  outline: red solid 1px;
       //}
+    }
+    .name {
+      border-left: 1px dotted #333333;
     }
   }
 }
