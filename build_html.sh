@@ -15,7 +15,7 @@ EOF
   exit 1
 }
 
-echo "Running at "`date`
+echo "========== Running at `date` =========="
 
 basedir=/home/sandy/github
 gitdir=${basedir}/blog
