@@ -3,16 +3,41 @@
     <title>Jiayi Sandy Wu's Resume</title>
 
   <style type="text/css">
-      div#sandy_title
-      {
+      .title {
         font-size:    32px;
         font-weight:  bold;
         text-align:   center;
       }
-
-      div.head_middle
-      {
-        text-align:   center;
+      .top-matter div {
+        float: left;
+        width: 33.33333%;
+        margin-bottom: 11px;
+      }
+      .text-left {
+        text-align: left;
+      }
+      .text-middle {
+        text-align: center;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .company {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .position {
+        float: left;
+        width: 80%;
+        font-style: italic;
+      }
+      .date {
+        float: left;
+        width: 20%;
+        text-align: right
+      }
+      .content {
+        margin-bottom: 18px;
       }
       th
       {
@@ -21,18 +46,6 @@
       td
       {
         width:  33%;
-      }
-      .table_left
-      {
-        text-align: left;
-      }
-      .table_middle
-      {
-        text-align: center;
-      }
-      .table_right
-      {
-        text-align: right;
       }
       body
       {
@@ -47,10 +60,6 @@
         border-collapse:  collapse;
         font-size:        20px;
       }
-      table#top_table
-      {
-
-      }
       div.section_head
       {
         font-weight:    bold;
@@ -63,6 +72,13 @@
       {
         margin: 0;
       }
+      .clearfix:after {
+        content: " ";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+      }
       div.tabbed
       {
         margin-left:    50px;
@@ -71,7 +87,7 @@
       }
       @media print
       {
-        body a, .table_middle
+        a
         {
           color:            black;
           text-decoration:  none;
@@ -85,17 +101,19 @@
   </head>
 
   <body>
-    <div id="sandy_title">Jiayi Sandy Wu</div>
+    <div class="title">Jiayi Sandy Wu</div>
     <br>
-    <table border="0" frame="none" rules="none" width="100%" align="center" id="top_table">
-      <tbody>
-        <tr>
-          <td class="table_left"><a target='_blank' href='https://github.com/jswu'>github.com/jswu</a></td>
-          <td class="table_middle"><a target='_blank' href='http://www.jiayisandywu.com'>www.jiayisandywu.com</a></td>
-          <td class="table_right">jiayisandywumail@gmail.com</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="top-matter">
+      <div class="text-left">
+        <a target="_blank" href="https://github.com/jswu">github.com/jswu</a>
+      </div>
+      <div class="text-middle">
+        <a target="_blank" href="http://www.jiayisandywu.com">www.jiayisandywu.com</a>
+      </div>
+      <div class="text-right">
+        jiayisandywu@gmail.com
+      </div>
+    </div>
     <hr>
 
     <div class="section_head">TECHNICAL SKILLS:</div>
@@ -108,12 +126,28 @@
           (Levenshtein distance, unbounded knapsack), and others</li>
         </ul>
       </li>
-      <li>Worked with C/C++, Python, JavaScript, PHP, Objective-C, Java, Perl, HTML, and CSS</li>
+      <li>Languages: C/C++, Ruby, Python, JavaScript, CoffeeScript PHP, Objective-C, Java, HTML and CSS</li>
     </ul>
 
     <div class="section_head">WORK EXPERIENCE:</div>
 
-    <strong>Twitter</strong><table border="0">
+    <div class="content">
+      <div class="company">Airbnb</div>
+      <div class="clearfix">
+        <div class="position">
+          <i>Software Engineering Intern</i>
+        </div>
+        <div class="date">
+          Sep. 2013 - present
+        </div>
+      </div>
+      <ul>
+        <li>Relevant technologies: CoffeScript + Backbone.js, Ruby on Rails, git</li>
+      </ul>
+    </div>
+
+    <strong>Twitter</strong>
+    <table border="0">
       <tbody>
         <tr>
           <td style="width:770px;"><i>Software Engineering Intern - Operating systems</i></td>
@@ -129,22 +163,6 @@
       </ul>
       <li>Benchmarked Linux memory cgroups (memcg) performance overhead</li>
       <li>Relevant technologies: Linux, Python, sh, memcg, git</li>
-    </ul>
-    <br>
-
-    <strong><a target='_blank' href="http://uwflow.com/">uwflow.com</a></strong>
-    <table border="0">
-      <tbody>
-        <tr>
-          <td style="width:770px;"><i>Co-founder</i></td>
-          <td style="width:230px;text-align:right;">Sep. 2012 - present</td>
-        </tr>
-      </tbody>
-    </table>
-    <ul>
-      <li><strong>Built a social course review and planning site for university students (try it out! <a target="_blank" href="http://uwflow.com/demo">uwflow.com/demo</a>)</strong></li>
-      <li>Side project with a few friends, currently at 2800 users, 19 000 user ratings, and 180 000 searches made</li>
-      <li>Relevant technologies: AWS, Python + Flask, JavaScript + Backbone.js, Bootstrap, Sass + Compass, MongoDB + MongoEngine, Redis, git</li>
     </ul>
     <br>
 
@@ -181,7 +199,6 @@
       <li>Relevant technologies: Unix, C++, JavaScript, Python, Apache Solr, svn</li>
     </ul>
 
-    <div class="page_break"></div>
     <br>
 
     <b>Enflick Inc.</b><table border="0">
@@ -200,6 +217,7 @@
       <li>Relevant technologies: Mac OS X (Snow Leopard), Xcode, Objective-C, svn</li>
     </ul>
 
+    <div class="page_break"></div>
     <br>
 
     <b>Magor Communications Corporation</b><table border="0">
@@ -221,6 +239,25 @@
 
     <div class="section_head">SIDE PROJECTS:</div>
 
+    <div class="content">
+      <div class="company">
+        <a target='_blank' href="http://uwflow.com/">uwflow.com</a>
+      </div>
+      <div class="clearfix">
+        <div class="position">
+          Co-founder
+        </div>
+        <div class="date">
+          Sep. 2012 - present
+        </div>
+      </div>
+      <ul>
+        <li><strong>Built a social course review and planning site for university students (try it out! <a target="_blank" href="http://uwflow.com/demo">uwflow.com/demo</a>)</strong></li>
+        <li>Side project with a few friends, currently at 3900 users, 36 000 user ratings, and 180 000 searches made</li>
+        <li>Relevant technologies: AWS, Python + Flask, JavaScript + Backbone.js, Bootstrap, Sass + Compass, MongoDB + MongoEngine, Redis, git</li>
+      </ul>
+    </div>
+
     <table border="0">
       <tbody>
         <tr>
@@ -231,19 +268,6 @@
     </table>
     <ul>
       <li>An open-source iOS app providing read-access to JobMine (University of Waterloo's job search system)</li>
-    </ul>
-    <br>
-
-    <table border="0">
-      <tbody>
-        <tr>
-          <td style="width:770px;"><b>Gacronym (C++ and Perl)</b></td>
-          <td style="width:230px;text-align:right;">Jan. 2011</td>
-        </tr>
-      </tbody>
-    </table>
-    <ul>
-      <li>Implemented a trie in C++ for efficiently accessing GBs of acronym data</li>
     </ul>
     <br>
 
@@ -290,7 +314,7 @@
 
     <div class="section_head">INTERESTS:</div>
     <ul>
-      <li>Parkour, karaoke, coding challenges/competitions, cooking and eating</li>
+      <li>Anime, weight lifting, yoga, karaoke, cooking and eating</li>
     </ul>
   </body>
 </html>
