@@ -20,6 +20,7 @@ echo "========== Running at `date` =========="
 basedir=/home/sandy/github
 gitdir=${basedir}/blog
 nginxdir=/usr/share/nginx/www
+stagingdir=$(mktemp)
 githubrepo=https://github.com/jswu/blog.git
 emailto="jiayisandywumail@gmail.com"
 
@@ -33,10 +34,12 @@ else
   git pull
 fi
 
-cd ${gitdir}
+# TODO: Generalize this
+(cd ${nginxdir} && rm -rf `ls | grep -v tmp`)
 
-rm -rf ${nginxdir}/*
-jekyll build --destination ${nginxdir}/
+cd ${gitdir}
+jekyll build --destination ${stagingdir}/
+cp -r ${stagingdir}/* ${nginxdir}/
 
 exitCode=$?
 
