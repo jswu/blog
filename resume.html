@@ -1,12 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Jiayi Sandy Wu's Resume</title>
+    <title>Sandy Wu's Resume</title>
 
   <style type="text/css">
       .title {
         font-size:    32px;
         font-weight:  bold;
         text-align:   center;
+      }
+      .top-matter {
+        display: inline-block;
+        width: 74%;
+        margin-left: 13%;
       }
       .top-matter div {
         float: left;
@@ -22,45 +27,36 @@
       .text-right {
         text-align: right;
       }
-      .company {
+      .company, .side-project {
         font-size: 20px;
         font-weight: bold;
       }
       .position {
         float: left;
-        width: 80%;
+        width: 75%;
         font-style: italic;
       }
       .date {
         float: left;
-        width: 20%;
-        text-align: right
+        width: 25%;
+        text-align: right;
+      }
+      .side-project {
+        float: left;
+        width: 75%;
       }
       .content {
-        margin-bottom: 18px;
-      }
-      th
-      {
-        width:  33%;
-      }
-      td
-      {
-        width:  33%;
+        margin-bottom: 24px;
       }
       body
       {
         width:        900px;
         margin-left:  auto;
         margin-right: auto;
-        font-family:  "Times New Roman", Times, serif;
-        font-size:    20px;
+        font-family:  "Calabria", Helvetica, Arial, sans-serif;
+        font-size:    18px;
       }
-      table
-      {
-        border-collapse:  collapse;
-        font-size:        20px;
-      }
-      div.section_head
+      .section_head
       {
         font-weight:    bold;
         text-align:     left;
@@ -72,6 +68,10 @@
       {
         margin: 0;
       }
+      li
+      {
+        margin-bottom: 2px
+      }
       .clearfix:after {
         content: " ";
         visibility: hidden;
@@ -79,7 +79,7 @@
         height: 0;
         clear: both;
       }
-      div.tabbed
+      .tabbed
       {
         margin-left:    50px;
         margin-top:     15px;
@@ -101,32 +101,28 @@
   </head>
 
   <body>
-    <div class="title">Jiayi Sandy Wu</div>
+    <div class="title">Sandy Wu</div>
     <br>
-    <div class="top-matter">
-      <div class="text-left">
-        <a target="_blank" href="https://github.com/jswu">github.com/jswu</a>
-      </div>
-      <div class="text-middle">
-        <a target="_blank" href="http://www.jiayisandywu.com">www.jiayisandywu.com</a>
-      </div>
-      <div class="text-right">
-        jiayisandywu@gmail.com
+    <div>
+      <div class="top-matter">
+        <div class="text-left">
+          <a target="_blank" href="https://github.com/jswu">github.com/jswu</a>
+        </div>
+        <div class="text-middle">
+          jiayisandywu@gmail.com
+        </div>
+        <div class="text-right">
+          <a target="_blank" href="http://www.jiayisandywu.com">jiayisandywu.com</a>
+        </div>
       </div>
     </div>
     <hr>
 
-    <div class="section_head">TECHNICAL SKILLS:</div>
+    <div class="section_head">SKILLS:</div>
     <ul>
-      <li>
-        Implemented data structures and algorithms for coding challenges and side projects
-        <ul>
-          <li>union-find, trie, kd-tree, A* variants, Bron-Kerbosch, k-nearest
-          neighbour search using a kd-tree, Floyd-Warshall, dynamic programming
-          (Levenshtein distance, unbounded knapsack), and others</li>
-        </ul>
-      </li>
-      <li>Languages: C/C++, Ruby, Python, JavaScript, CoffeeScript PHP, Objective-C, Java, HTML and CSS</li>
+      <li>C/C++, Objective-C, Ruby, Python, PHP, SQL, sh, JavaScript, CoffeeScript, HTML, CSS, Sass</li>
+      <li>iOS 3, Flask, Ruby on Rails, Backbone.js, MongoDB, Redis</li>
+      <li>vim, Xcode 3, git, svn, Linux, OS X, Windows</li>
     </ul>
 
     <div class="section_head">WORK EXPERIENCE:</div>
@@ -135,107 +131,124 @@
       <div class="company">Airbnb</div>
       <div class="clearfix">
         <div class="position">
-          <i>Software Engineering Intern</i>
+          <i>Software Engineering Intern - Online Marketing Group</i>
         </div>
         <div class="date">
-          Sep. 2013 - present
+          Sep. 2013 - Dec. 2013
         </div>
       </div>
       <ul>
-        <li>Relevant technologies: CoffeScript + Backbone.js, Ruby on Rails, git</li>
+        <li>
+          <strong>
+            Full stack web development working on
+            <a target="_blank" href="https://www.airbnb.com/locations/san-francisco">Featured Articles</a>
+            for Airbnb's Neighborhood guides
+          </strong>
+        </li>
+        <li>Created internal tools and public facing pages to manage and display article content</li>
+        <li>Implemented changes across the site to improve SEO and user experience</li>
+        <li>Relevant technologies: CoffeeScript + Backbone.js, Ruby on Rails, Sass, git</li>
       </ul>
     </div>
 
-    <strong>Twitter</strong>
-    <table border="0">
-      <tbody>
-        <tr>
-          <td style="width:770px;"><i>Software Engineering Intern - Operating systems</i></td>
-          <td style="width:230px;text-align:right;">Jan. 2013 - Apr. 2013</td>
-        </tr>
-      </tbody>
-    </table>
-    <ul>
-      <li><strong>Worked on yum repository management and memory cgroups</strong></li>
-      <li>Wrote a tool for comparing various versions of RPM packages between sets of yum repositories</li>
+    <div class="content">
+      <div class="company">Twitter</div>
+      <div class="clearfix">
+        <div class="position">
+          <i>Software Engineering Intern - Operating systems</i>
+        </div>
+        <div class="date">
+          Jan. 2013 - Apr. 2013
+        </div>
+      </div>
       <ul>
-        <li>Computed added/removed/changed files, RPM tags, dependencies, and security errata</li>
+        <li><strong>Worked on yum repository management and memory cgroups</strong></li>
+        <li>Wrote a tool for comparing various versions of RPM packages between sets of yum repositories
+          <ul>
+            <li>Computed files added/removed/changed, RPM tags, dependencies, and security errata</li>
+          </ul>
+        </li>
+        <li>Benchmarked Linux memory cgroups (memcg) performance overhead</li>
+        <li>Relevant technologies: Linux, Python, sh, memcg, git</li>
       </ul>
-      <li>Benchmarked Linux memory cgroups (memcg) performance overhead</li>
-      <li>Relevant technologies: Linux, Python, sh, memcg, git</li>
-    </ul>
-    <br>
+    </div>
 
-    <b>Facebook</b><table border="0">
-      <tbody>
-        <tr>
-          <td style="width:770px;"><i>Software Engineering Intern</i></td>
-          <td style="width:230px;text-align:right;">May 2012 - Aug. 2012</td>
-        </tr>
-      </tbody>
-    </table>
-    <ul>
-    <!-- TODO: change -->
-      <li><b>Worked on <a target='_blank' href="https://developers.facebook.com/docs/reference/plugins/comments/">Facebook Comments</a> (Social Plugin)</b></li>
-      <li>Initiated an effort to improve the plugin where I discovered/fixed bugs, refactored/killed legacy code, gathered/analyzed usage data and benchmarked/improved performance under minimal supervision</li> 
-      <li>Made bug fixes for mobile permissions analytics logging and dialogs</li>
-      <li>Relevant technologies: Linux, PHP, JavaScript, HIVE, git</li>
-    </ul>
-    <br>
+    <div class="content">
+      <div class="company">Facebook</div>
+      <div class="clearfix">
+        <div class="position">
+          <i>Software Engineering Intern - Open Graph</i>
+        </div>
+        <div class="date">
+          May 2012 - Aug. 2012
+        </div>
+      </div>
+      <ul>
+      <!-- TODO: change -->
+        <li><b>Worked on <a target='_blank' href="https://developers.facebook.com/docs/reference/plugins/comments/">Facebook Comments</a> (Social Plugin)</b></li>
+        <li>Initiated an effort to improve the plugin where I discovered/fixed bugs, refactored/killed legacy code, gathered/analyzed usage data and benchmarked/improved performance under minimal supervision</li>
+        <li>Made bug fixes for mobile permissions analytics logging and dialogs</li>
+        <li>Relevant technologies: Linux, PHP, JavaScript, HIVE, git</li>
+      </ul>
+    </div>
 
-    <b>Bloomberg L.P.</b><table border="0">
-      <tbody>
-        <tr>
-          <td style="width:770px;"><i>Financial Software Developer</i></td>
-          <td style="width:230px;text-align:right;">Sep. 2011 - Dec. 2011</td>
-        </tr>
-      </tbody>
-    </table>
-    <ul>
-      <li><b>Worked on the management/operational layer of a large-scale system that manages the searching and indexing of Big Data <a target='_blank' href='http://www.bloomberg.com/bvault/'>(Bloomberg Vault)</a></b></li>
-            <li>Designed and implemented a distributed architecture using C++ enterprise messaging framework</li>
-            <li>Developed a reliable distributed coordination and management interface to Apache Solr/Lucene</li>
-            <li>Designed UI for operational maintenance using JavaScript enterprise GUI framework</li>
-      <li>Relevant technologies: Unix, C++, JavaScript, Python, Apache Solr, svn</li>
-    </ul>
-
-    <br>
-
-    <b>Enflick Inc.</b><table border="0">
-      <tbody>
-        <tr>
-          <td style="width:770px;"><i>iOS Software Developer</i></td>
-          <td style="width:230px;text-align:right;">Jan. 2011 - June 2011</td>
-        </tr>
-      </tbody>
-    </table>
-    <ul>
-      <li><b>Worked on <a target='_blank' href='http://www.pingchat.com/'>PingChat!</a>, a mobile instant messaging application with over 8 million users</b></li>
-      <li>Developed key features for the iOS client version of PingChat! under minimal supervision</li>
-      <li>Designed and implemented efficient system to send and receive Event Statuses and Emoticons</li>
-      <li>Encouraged the creation and maintenance of documentation by congregating feature specifications</li>
-      <li>Relevant technologies: Mac OS X (Snow Leopard), Xcode, Objective-C, svn</li>
-    </ul>
+    <div class="content">
+      <div class="company">Bloomberg L.P.</div>
+      <div class="clearfix">
+        <div class="position">
+          <i>Financial Software Developer</i>
+        </div>
+        <div class="date">
+          Sep. 2011 - Dec. 2011
+        </div>
+      </div>
+      <ul>
+        <li><b>Worked on the management/operational layer of a large-scale system that manages the searching and indexing of Big Data <a target='_blank' href='http://www.bloomberg.com/bvault/'>(Bloomberg Vault)</a></b></li>
+              <li>Designed and implemented a distributed architecture using C++ enterprise messaging framework</li>
+              <li>Developed a reliable distributed coordination and management interface to Apache Solr/Lucene</li>
+              <li>Designed UI for operational maintenance using JavaScript enterprise GUI framework</li>
+        <li>Relevant technologies: Unix, C++, JavaScript, Python, Apache Solr, svn</li>
+      </ul>
+    </div>
 
     <div class="page_break"></div>
-    <br>
 
-    <b>Magor Communications Corporation</b><table border="0">
-      <tbody>
-        <tr>
-          <td style="width:770px;"><i>Automation Tools Software Developer</i></td>
-          <td style="width:230px;text-align:right;">May. 2010 - Sep. 2010</td>
-        </tr>
-      </tbody>
-    </table>
-    <ul>
-      <li><b>Designed and implemented automation framework for data analysis and video quality evaluation</b></li>
-      <li>Created network impairment management tool to help demo Magor products at InfoComm 2010</li>
-      <li>Mentored a student employee in automation tools development</li>
-      <li>Relevant technologies: Linux, Eclipse, Java, Perl, HTML, PHP, CSS, JavaScript, SNMP, svn</li>
-    </ul>
+    <div class="content">
+      <div class="company">Enflick Inc.</div>
+      <div class="clearfix">
+        <div class="position">
+          <i>iOS Software Developer</i>
+        </div>
+        <div class="date">
+          Jan. 2011 - Jun. 2011
+        </div>
+      </div>
+      <ul>
+        <li><b>Worked on PingChat!, a mobile instant messaging application with over 8 million users</b></li>
+        <li>Developed key features for the iOS client version of PingChat! under minimal supervision</li>
+        <li>Designed and implemented efficient system to send and receive Event Statuses and Emoticons</li>
+        <li>Encouraged the creation and maintenance of documentation by congregating feature specifications</li>
+        <li>Relevant technologies: OS X, Xcode, Objective-C, svn</li>
+      </ul>
+    </div>
 
-    <br>
+    <div class="content">
+      <div class="company">Magor Communications Corporation</div>
+      <div class="clearfix">
+        <div class="position">
+          <i>Automation Tools Software Developer</i>
+        </div>
+        <div class="date">
+          May. 2010 - Sep. 2010
+        </div>
+      </div>
+      <ul>
+        <li><b>Designed and implemented automation framework for data analysis and video quality evaluation</b></li>
+        <li>Created network impairment management tool to help demo Magor products at InfoComm 2010</li>
+        <li>Mentored a student employee in automation tools development</li>
+        <li>Relevant technologies: Linux, Eclipse, Java, Perl, HTML, PHP, CSS, JavaScript, SNMP, svn</li>
+      </ul>
+    </div>
 
     <div class="section_head">SIDE PROJECTS:</div>
 
@@ -252,39 +265,41 @@
         </div>
       </div>
       <ul>
-        <li><strong>Built a social course review and planning site for university students (try it out! <a target="_blank" href="http://uwflow.com/demo">uwflow.com/demo</a>)</strong></li>
-        <li>Side project with a few friends, currently at 3900 users, 36 000 user ratings, and 180 000 searches made</li>
+        <li><strong>Helping build a website that lets university students review and plan courses (<a target="_blank" href="http://uwflow.com/demo">uwflow.com/demo</a>)</strong></li>
+        <li>Built with a few friends, currently at 4000 users, 40 000 user ratings, and 200 000 course searches made</li>
         <li>Relevant technologies: AWS, Python + Flask, JavaScript + Backbone.js, Bootstrap, Sass + Compass, MongoDB + MongoEngine, Redis, git</li>
       </ul>
     </div>
 
-    <table border="0">
-      <tbody>
-        <tr>
-          <td style="width:770px;"><b><a target='_blank' href="https://github.com/jswu/Joblet">Joblet</a> (Objective-C)</b></td>
-          <td style="width:230px;text-align:right;">Mar. 2011 - Jun. 2011</td>
-        </tr>
-      </tbody>
-    </table>
-    <ul>
-      <li>An open-source iOS app providing read-access to JobMine (University of Waterloo's job search system)</li>
-    </ul>
-    <br>
+    <div class="content">
+      <div class="clearfix">
+        <div class="side-project">
+          <a target='_blank' href="https://github.com/jswu/Joblet">Joblet</a> (iOS 3)
+        </div>
+        <div class="date">
+          Mar. 2011 - Jun. 2011
+        </div>
+      </div>
+      <ul>
+        <li>An open-source iOS app providing read-access to JobMine (University of Waterloo's job search system)</li>
+      </ul>
+    </div>
 
-    <table border="0">
-      <tbody>
-        <tr>
-          <td style="width:770px;"><b>Physics Collision Simulator (C++)</b></td>
-          <td style="width:230px;text-align:right;">Nov. 2008 - Jan. 2009</td>
-        </tr>
-      </tbody>
-    </table>
-    <ul>
-      <li>Simulated 2-D colisions of two balls with varying size, mass,
-      gravity, air resistance and elasticity</li>
-      <li>Created GUI for receiving input and displaying real-time properties of each ball</li>
-    </ul>
-    <br>
+    <div class="content">
+      <div class="clearfix">
+        <div class="side-project">
+          Physics Collision Simulator (C++)
+        </div>
+        <div class="date">
+          Nov. 2008 - Jan. 2009
+        </div>
+      </div>
+      <ul>
+        <li>Simulated 2-D colisions of two balls with varying size, mass,
+        gravity, air resistance and elasticity</li>
+        <li>Created GUI for receiving input and displaying real-time properties of each ball</li>
+      </ul>
+    </div>
 
     <div class="section_head">AWARDS:</div>
     <ul>
@@ -304,9 +319,10 @@
     </ul>
 
     <div class="section_head">EDUCATION:</div>
-    <b>Candidate for Bachelor of Software Engineering,</b> University of Waterloo, Waterloo, ON,<br>
-    Sept. 2009 - Present
+    <b>Candidate for Bachelor of Software Engineering,</b> University of Waterloo, Waterloo, Ontario, Canada<br>
+    Sep. 2009 - Apr. 2014 (expected)
     <ul>
+      <li>Member of the <a target="_blank" href="http://velocity.uwaterloo.ca">VeloCity</a> startup incubator for five terms</li>
       <li>SE 350: Wrote an operating system for the Cortex M-3 ARM processor in C</li>
       <li>CS 241: Wrote a WL (subset of C and Java) to MIPS compiler in C++</li>
       <li>ECE 222: Wrote a calculator for 68K/ColdFire in assembly</li>
