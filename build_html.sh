@@ -38,6 +38,10 @@ fi
 (cd ${nginxdir} && rm -rf `ls | grep -v "^tmp$"`)
 
 cd ${gitdir}
+
+# Rebuild CSS
+compass compile conf
+
 jekyll build --destination ${stagingdir}/
 cp -r ${stagingdir}/* ${nginxdir}/
 echo "Final destination: ${nginxdir}"
