@@ -35,11 +35,12 @@ else
 fi
 
 # TODO: Generalize this
-(cd ${nginxdir} && rm -rf `ls | grep -v tmp`)
+(cd ${nginxdir} && rm -rf `ls | grep -v "^tmp$"`)
 
 cd ${gitdir}
 jekyll build --destination ${stagingdir}/
 cp -r ${stagingdir}/* ${nginxdir}/
+echo "Final destination: ${nginxdir}"
 
 exitCode=$?
 
