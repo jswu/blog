@@ -35,7 +35,7 @@ else
 fi
 
 # TODO: Generalize this
-(cd ${nginxdir} && rm -rf `ls | grep -v "^tmp$"`)
+(cd ${nginxdir} && rm -rf `ls | grep -v "^tmp$" | grep -v "^event-journal$"`)
 
 cd ${gitdir}
 
